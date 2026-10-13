@@ -1,20 +1,3 @@
-/*
- * FPV Head Tracker - Transmitter (TX)
- * Board: Arduino Pro Mini (5 V, 16 MHz, ATmega328P)
- * Parts: MPU6050 motion sensor + nRF24L01 radio
- *
- * Based on the design and original sketches of Max Imagination
- * (tutorial: https://youtu.be/Tu0cay6S5WI), reworked with fixes
- * listed in the project README.
- *
- * Libraries: RF24 (TMRh20), MPU6050 (i2cdevlib by Jeff Rowberg)
- *
- * Wiring:
- *   MPU6050  VIN -> VCC, GND -> GND, SDA -> A4, SCL -> A5
- *   nRF24L01 CE -> D9, CSN -> D10 (on the 8-channel receiver board)
- *
- * Keep the unit still for a few seconds after power-on (sensor calibration).
- */
 #include <Wire.h>
 #include <SPI.h>
 #include <RF24.h>

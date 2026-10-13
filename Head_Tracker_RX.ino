@@ -1,18 +1,4 @@
-/*
- * FPV Head Tracker - Receiver (RX) for the pan & tilt camera head
- * Board: Arduino Pro Mini (5 V, 16 MHz, ATmega328P) on the 8-channel nRF24L01 board
- *
- * Based on the design and original sketches of Max Imagination
- * (tutorial: https://youtu.be/Tu0cay6S5WI), reworked with fixes
- * listed in the project README.
- *
- * Libraries: RF24 (TMRh20), Servo (included with the Arduino IDE)
- *
- * Servos: pan on pin D3 (header channel 2), tilt on pin D5 (header channel 4).
- *
- * Use this sketch together with Head_Tracker_TX. The two sketches share
- * HeadTrackerProtocol.h, which must be identical in both folders.
- */
+
 #include <SPI.h>
 #include <RF24.h>
 #include <Servo.h>
